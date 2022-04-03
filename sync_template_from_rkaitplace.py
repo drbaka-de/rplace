@@ -42,12 +42,12 @@ def fetch_reference(url):
 			print("FOUND REFERENCE in " + url)
 			return Image.open(BytesIO(binascii.a2b_base64(b64pngmatch.group(1))))
 
-    
+
 def rescale_heuristic(img):
 	if img.size[0] > 80:
 		return img.resize((img.size[0] // 10, img.size[1] // 10), Image.NEAREST)
-  else
-    return img
+	else:
+		return img
 
 
 def update_reference(url, file):
@@ -57,7 +57,7 @@ def update_reference(url, file):
 		img = Image.open(file)
 
 	if img:
-    img = rescale_heuristic(img)
+		img = rescale_heuristic(img)
 		img = fix_colors(img)
 		img.save(file)
 
