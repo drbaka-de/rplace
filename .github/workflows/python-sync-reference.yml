@@ -27,7 +27,7 @@ jobs:
         run: python ./sync_template_from_rkaitplace.py
         
       - name: switching from HTTPS to SSH
-        run: git remote set-url origin ${{ secrets.ssh }}
+        run: git remote set-url origin ${{ secrets.SSH_REPO_URL }}
         
       - name: check for changes
         run: git status
