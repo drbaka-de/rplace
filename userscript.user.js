@@ -16,8 +16,8 @@ if (window.top !== window.self) {
         (function () {
             const i = document.createElement("img");
             const time = Math.floor(Date.now() / 10000);
-            i.src = "https://raw.githubusercontent.com/drbaka-de/rplace/main/kait_koeri_overlay.png?tstamp=" + time;
-            i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;";
+            i.src = "https://raw.githubusercontent.com/drbaka-de/rplace/main/overlay.png?tstamp=" + time;
+            i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;";
             console.log(i);
             return i;
         })())
