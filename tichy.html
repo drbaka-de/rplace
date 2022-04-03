@@ -29,7 +29,7 @@
     	</p>
         <p>
             ORIGINAL TEMPLATE AND COLOR GUIDE
-            <a href="https://rkaitplace.netlify.app/">https://rkaitplace.netlify.app/</a>
+            <a href="https://rkaitplace.netlify.app/tichy.html">https://rkaitplace.netlify.app/tichy.html</a>
         </p>
         <p>
             OVERLAY INSTRUCTIONS
@@ -45,16 +45,12 @@
             <br />
             To install, click here:<a href="https://drbaka-de.github.io/rplace/userscript.user.js">https://drbaka-de.github.io/rplace/userscript.user.js</a>
             <br />
-            <span style="text-decoration:line-through;">The overlay contains both KIT and [koeri].</span>
-            <span>The overlay contains both KIT and Tichy.</span>
+            The overlay contains both KIT and Tichy.
         </p>
         <p>
             OTHER PLACES
             <br />
-            <!--
-            <a href="koeri.html">[koeri]</a>
-            -->
-            <a href="tichy.html">Tichy</a>
+            <a href="index.html">KIT-Logo</a>
         </p>
     </div>
 
@@ -69,8 +65,8 @@
         const X_OFFSET=400
         const Y_OFFSET=100
 
-        const X_IN_PLACE=760
-        const Y_IN_PLACE=521
+        const X_IN_PLACE=!!!CHANGEME!!!
+        const Y_IN_PLACE=!!!CHANGEME!!!
 
         function getMousePos(canvas, evt) {
             const rect = canvas.getBoundingClientRect();
@@ -113,8 +109,8 @@
             bg.drawImage(img, 0, 0, img.width, img.height, 0, Y_OFFSET, w, h)
             drawGrid(0, Y_OFFSET, w, h + Y_OFFSET, bg)
         };
-        //img.src = "https://raw.githubusercontent.com/drbaka-de/rplace/main/reference.png";
-        img.src = "reference.png";
+        img.src = "https://raw.githubusercontent.com/drbaka-de/rplace/main/reference_tichy.png";
+        //img.src = "reference_tichy.png";
 
         function drawText(text, x, y){
             fg.font = '80px Sans-serif';
