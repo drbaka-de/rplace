@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Superstonk's rPlace</title>
+    <title>KaIT's /r/place</title>
     <style>
         .container {
             position: relative;
@@ -20,6 +20,14 @@
 <body>
 
     <div>
+    	<p>
+    		DISCLAIMER
+    		<br />
+    		This page is forked from <a href="https://github.com/halfdane/rplace">https://github.com/halfdane/rplace</a> and <a href="https://github.com/rplacesuperstonk/rplace-image">https://github.com/rplacesuperstonk/rplace-image</a>.
+    		<br />
+    		All credits and kudos to them.
+    	</p>
+    	<!--
         <p>
             OVERLAY INSTRUCTIONS
             <br />
@@ -34,6 +42,7 @@
             <br />
             To install, click here:<a href="https://rplacesuperstonk.github.io/rplace-image/userscript.user.js">https://rplacesuperstonk.github.io/rplace-image/userscript.user.js</a>
         </p>
+    	-->
     </div>
 
     <div id = "container" class = "container">
@@ -47,8 +56,8 @@
         const X_OFFSET=400
         const Y_OFFSET=100
 
-        const X_IN_PLACE=773
-        const Y_IN_PLACE=735
+        const X_IN_PLACE=760
+        const Y_IN_PLACE=521
 
         function getMousePos(canvas, evt) {
             const rect = canvas.getBoundingClientRect();
@@ -91,7 +100,8 @@
             bg.drawImage(img, 0, 0, img.width, img.height, 0, Y_OFFSET, w, h)
             drawGrid(0, Y_OFFSET, w, h + Y_OFFSET, bg)
         };
-        img.src = "https://raw.githubusercontent.com/rplacesuperstonk/rplace-image/main/reference.png";
+        //img.src = "https://raw.githubusercontent.com/rplacesuperstonk/rplace-image/main/reference.png";
+        img.src = "reference.png";
 
         function drawText(text, x, y){
             fg.font = '80px Sans-serif';
