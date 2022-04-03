@@ -3,10 +3,12 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the canvas!
-// @author       oralekin
+// @author       oralekin, drbaka-de
 // @match        https://hot-potato.reddit.com/embed*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
+// @icon         https://www.kit.edu/img/intern/favicon.ico
 // @grant        none
+// @updateURL    https://drbaka-de.github.io/rplace/userscript.user.js
+// @downloadURL  https://drbaka-de.github.io/rplace/userscript.user.js
 // ==/UserScript==
 if (window.top !== window.self) {
     window.addEventListener('load', () => {
@@ -14,16 +16,10 @@ if (window.top !== window.self) {
         (function () {
             const i = document.createElement("img");
             const time = Math.floor(Date.now() / 10000);
-            i.src = "https://raw.githubusercontent.com/drbaka-de/rplace/main/kait_overlay.png?tstamp=" + time;
-            if (i.width === i.height) {
-                i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 1000px;height: 1000px;";
-            } else {
-               i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;";
-            }
+            i.src = "https://raw.githubusercontent.com/drbaka-de/rplace/main/kait_koeri_overlay.png?tstamp=" + time;
+            i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;";
             console.log(i);
             return i;
         })())
-
     }, false);
-
 }
