@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         KaIT Logo template
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the canvas!
 // @author       oralekin, drbaka-de
 // @match        https://hot-potato.reddit.com/embed*
