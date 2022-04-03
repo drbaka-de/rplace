@@ -75,8 +75,8 @@ async function run() {
                 resolve({template_ctx: template_ctx, template_img: img})
             }
             img.onerror = reject
-            //img.src = "https://raw.githubusercontent.com/drbaka-de/rplace/main/reference.png?tstamp=" + Math.floor(Date.now() / 10000);
-            img.src = "reference.png";
+            img.src = "https://raw.githubusercontent.com/drbaka-de/rplace/main/reference.png?tstamp=" + Math.floor(Date.now() / 10000);
+            //img.src = "reference.png";
         })
     }
 
