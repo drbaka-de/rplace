@@ -11,7 +11,7 @@ def main():
     mask = Image.open("mask.png").convert("1")
 
     top_left_kit = (760 * 3, 521 * 3)
-    top_left_koeri = (601 * 3, 1887 * 3)
+    top_left_koeri = (1419 * 3, 1172 * 3)
 
     empty = Image.new('RGBA', (6000, 6000))
     overlay = Image.new('RGBA', (6000, 6000))
