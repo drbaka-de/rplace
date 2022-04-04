@@ -12,11 +12,13 @@ def main():
 
     top_left_kit = (760 * 3, 521 * 3)
     top_left_koeri = (1419 * 3, 1172 * 3)
+    top_left_koeri_2 = (1936 * 3, 1149 * 3)
 
     empty = Image.new('RGBA', (6000, 6000))
     overlay = Image.new('RGBA', (6000, 6000))
     overlay.paste(kit_image, top_left_kit)
     overlay.paste(koeri_image, top_left_koeri)
+    overlay.paste(koeri_image, top_left_koeri_2)
     overlay.paste(empty, None, mask)
     overlay.save("overlay.png")
 
